@@ -1,7 +1,7 @@
 ---
 nav:
-  title: 兴趣爱好
-  path: /hobby
+  title: 兴趣爱好1
+  path: /hobby1
 ---
 
 ## Foo
