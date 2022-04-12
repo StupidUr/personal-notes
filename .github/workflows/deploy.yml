@@ -33,7 +33,7 @@ jobs:
       - name: npm install, build
         run: |
           npm install
-          npm run build
+          npm run docs:build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
