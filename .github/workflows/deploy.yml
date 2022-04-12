@@ -25,15 +25,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - name: Use Node.js 15.x
+      - name: Use Node.js 14.16.0
         uses: actions/setup-node@v1
         with:
-          node-version: 15.x
+          node-version: 14.16.0
 
-      - name: yarn install, build
+      - name: npm install, deploy
         run: |
-          yarn
-          yarn deploy
+          npm install
+          npm run deploy
         # - name: Deploy
         #   uses: JamesIves/github-pages-deploy-action@3.7.1
         #   with:
