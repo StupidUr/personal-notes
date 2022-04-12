@@ -40,7 +40,7 @@ jobs:
           ACCESS_TOKEN: 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
           BRANCH: gh-pages
           FOLDER: docs-dist
-          REPOSITORY_NAME: stupidur/stupidur.github.io
+          REPOSITORY_NAME: StupidUr/StupidUr.github.io
           # TARGET_FOLDER:
 
         env:
