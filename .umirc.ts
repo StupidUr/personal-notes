@@ -26,6 +26,10 @@ export default defineConfig({
       ],
     },
     {
+      title: '待解决问题',
+      path: '/problem'
+    },
+    {
       title: 'GitHub',
       path: 'https://github.com/StupidUr',
     },
