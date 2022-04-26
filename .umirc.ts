@@ -14,7 +14,12 @@ export default defineConfig({
     {
       title: '工具软件',
       path: '/tool',
-      children: [{ title: 'VSCode', path: '/tool/VSCode' }],
+      children: [
+        { title: 'VSCode', path: '/tool/VSCode' },
+        { title: 'IDEA', path: '/tool/IDEA' },
+        { title: 'MAC', path: '/tool/MAC' },
+        { title: 'other', path: '/tool/other' }
+      ],
     },
     {
       title: '兴趣爱好',
