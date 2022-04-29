@@ -10,7 +10,12 @@ order: 1 # 排序
 
 1. 默认快捷键
 
-2. 使用`Thor Launcher`,`Snap`设置
+｜快捷按键 ｜ 描述 ｜
+｜---｜---｜
+｜fn+e ｜ 输入表情与符号 ｜
+
+
+1. 使用`Thor Launcher`,`Snap`设置
 > 为什么使用两款软件呢？
 > `Snap`这款软件在系统升级到12.3时，应用界面无法添加应用，仍然使用应用Docker栏快捷键的设置。配合`Thor Launcher`实现快速应用切换。
 
@@ -19,3 +24,17 @@ order: 1 # 排序
 
 
 3. 自定义快捷键
+
+
+## 系统相关插件
+
+### Alfred 效率神器
+
+
+## 系统设置
+
+### `fn`在不同应用内默认设置
+
+![](https://cdn.jsdelivr.net/gh/StupidUr/images@main/notes/20220428155718.png)
+
+
