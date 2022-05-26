@@ -7,7 +7,7 @@ order: 1 # 排序
 
 ## IDEA插件说明
 
-> 可以选择对应插件进行搜索，插件包括：`Github Copilot`、`IdeaVim`、`Background Image Plus +`、`Gitmoji Commit`、`Code Search`、`Alibaba Java Coding Guidelines`、`One Dark theme`、`Atom Material Icon`、`Translation`、`Free Mybatis plugin`、`Save Actions`、`Key promoter`
+> 可以选择对应插件进行搜索，插件包括：`Github Copilot`、`IdeaVim`、`Background Image Plus +`、`Gitmoji Commit`、`Code Search`、`Alibaba Java Coding Guidelines`、`One Dark theme`、`Atom Material Icon`、`Translation`、`Free Mybatis plugin`、`Save Actions`、`Key promoter`、`Restful Fast Request`、`Redis Manager`
 
 1. Github Copilot
 > 微软与OpenAI共同推出了一款AI编程工具GitHub Copilot。有多强大用了就知道，`Tab`自动补齐。
@@ -25,7 +25,7 @@ order: 1 # 排序
 Idea自带背景图透明度设置如下：
 ![](https://cdn.jsdelivr.net/gh/StupidUr/images@main/notes/20220427100936.png)
 
-1. Gitmoji Plus:Commit Button
+4. Gitmoji Plus:Commit Button
 > 插件可以让你在git commit的时候添加一个emoji
 ![](https://cdn.jsdelivr.net/gh/StupidUr/images@main/notes/20220427091937.png)
 
@@ -56,6 +56,21 @@ Idea自带背景图透明度设置如下：
 
 12. Key promoter
     > 快捷键提示插件
+
+
+13. Restful Fast Request
+    > Restful Fast Request是idea版Postman,它是一个强大的restful api工具包插件，可以根据已有的方法帮助您快速生成url和params。 Restful Fast Request = API调试工具+API管理工具+API搜索工具。 它有一个漂亮的界面来完成请求、检查服务器响应、存储你的api请求和导出api请求 插件帮助你在IDEA界面内更快更高效得调试你的API
+
+    修改Find Api快捷键：`⌘+、` 
+
+    - 免费版(收费版功能更强,从2022.1.4.0开始)
+
+14. Redis Manager
+    > IDEA Reids 管理，为了实现一个编辑器内实现所有相关操作包括自带的`DataSource`
+
+    
+
+
 ## IDEA 相关快捷键
 
 ### 全局快捷键
@@ -66,14 +81,17 @@ Idea自带背景图透明度设置如下：
 | ⇧+⌘+v | 针对复制历史进行粘贴| 
 | ⌘+⌥+⇧+Y | 右键菜单 ![](https://cdn.jsdelivr.net/gh/StupidUr/images@main/notes/20220428160929.png) | 
 | ⌘+. | 折叠当前代码块 |
-
+| ⌘+F12 | 打开当前类所有方法 |
+| ⌘+上下左右 | 类以及方法直接切换 |
 
 ### 窗口之间切换
 
 | 快捷键 |  功能 | 
 | -------| ------| 
 | ⌥+F1 | 当前文件在窗口内显示 |
-| ⌘+⌥+` 或 ⌘+⌥+⇧+`  | 上一个窗口下一个窗口 |
+| ⌘+⌥+\` 或 ⌘+⌥+⇧+\`  | 上一个窗口下一个窗口 |
+| ⇧+⌘+W | 关闭当前项目 | 
+
 
 ### 文件内代码移动和跳转
 | 快捷键 |  功能 | 
@@ -82,3 +100,17 @@ Idea自带背景图透明度设置如下：
 | ⇧+⌘+D | 复制当前行|
 | ⇧+⌘+X | 剪切当前行|
 | ⇧+⌘+[ / ] 或 ⌃+tab | 切换当前编辑的文件|
+| F3、⌥+F3 | 添加标签 |
+| ⌘+F3 | 删除以及查看标签 |
+
+### 其他快捷键
+| 快捷键 |  功能 | 
+| -------| ------| 
+| ⇧+⌘+F12 | 代码窗口最大化 |
+
+## JetBrains以及相关插件激活
+
+**ja-netfilter**
+
+电报：https://t.me/+04JSoJhbqTEzNzZh
+

@@ -10,7 +10,7 @@ order: 1 # 排序
 
 ## 插件说明
 
-> 插件包括：`Code Runer`、`Github Copilot`、`Prettier - Code formatter`、`Git Emoji Commit`、`background-cover`、`Fix VSCode Checksums`、`Bracket Pair Colorizer 2`、`Browse Lite`、`Auto Import`、`cdnjs`
+> 插件包括：`Code Runer`、`Github Copilot`、`Prettier - Code formatter`、`Git Emoji Commit`、`background-cover`、`Fix VSCode Checksums`、`Bracket Pair Colorizer 2`、`Browse Lite`、`Auto Import`、`cdnjs`、`Chinese Lorem`、`Prettify JSON`
 
 1. Code Runer
 
@@ -53,6 +53,10 @@ order: 1 # 排序
     
 11. Chinese Lorem
     > 中文自动生成插件。输入ctlorem+数字，可以自动生成中文的 Lorem ipsum 文本。
+
+12. Prettify JSON
+    > 格式化 JSON 文件。 通过`⌘+⇧+p`输入`prettifyjson`，可以格式化 JSON 文件。
+
 ## 快捷键记录
 
 - 默认快捷键
@@ -66,7 +70,8 @@ order: 1 # 排序
 |切换调试控制台| ⌘+⇧+y |
 |打开关闭侧边栏| ⌘+b |
 |转到文件 | ⌘+p |
-|切换窗口 | ⌃+w |
+|切换窗口 | ⌃+w 或 ⌘+⇧+⌥+·|
+
 
 - 自定义/插件快捷键
 

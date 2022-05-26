@@ -6,7 +6,14 @@ order: 1 # 排序
 
 # Vim使用说明
 
-> [IdeaVim常用参考地址](https://www.cnblogs.com/jaycekon/p/15179103.html)
+> Vim是一个功能强大、高度可定制的文本编辑器; 具体有多强大，我现在还没体会到（orz）。在日新月异的互联网时代中，vim 可以算是一个历史悠久的产物，从诞生到现在都没有别的编辑器能替代（感兴趣可了解一下 Emacs）。目前主流的VSCode、Intellij 全家桶和Chrome等，都支持/提供了 vim plugin。
+
+- [Vim 从入门到精通](https://github.com/wsdjeg/vim-galore-zh_cn#%E4%BB%80%E4%B9%88%E6%98%AF-vim) : Github 8k 🌟 Vim 学习教程
+- [简明 VIM 练级攻略](https://coolshell.cn/articles/5426.html)：陈皓 的 VIM 存活攻略
+- [游戏：VIM 大冒险](https://vim-adventures.com/)： 通过游戏的方式学习 VIM
+
+![一张图](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3d5637f9fb994e5bb006511d8c143804~tplv-k3u1fbpfcp-watermark.image)
+
 
 ## 运行模式
 ---- 
@@ -246,3 +253,124 @@ Vim 的各种移动命令主要是在标准模式下
 | ----	| ----|
 | u	| 撤销上一步的操作| 
 | ctrl+r	| 将原来的插销重做一遍 | 
+
+
+## IdeaVim
+
+> [IdeaVim摘抄](https://www.cnblogs.com/jaycekon/p/15179103.html)
+
+### 初阶移动
+> `h, j,k,l`： 左，下，上，右 移动</br>
+> 
+> `0,^,$`：行首，行首字母，行尾</br>
+> 
+> `gg,G,50G`：文件头，文件尾，跳转到指定行</br>
+> 
+演示操作:
+h-> j->k->l->0->^->$
+
+![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4c90f5148908496ba6233e7ccdd162b6~tplv-k3u1fbpfcp-watermark.image)
+
+### 进阶移动
+> `w & W`：w右移一个单词（标点分割）, W右移一个字串（空格/换行分割）
+> `b & B`：b左移一个单词（标点分割）, B右移一个字串（空格/换行分割）
+> `{ & }`： 移动到段首，尾部 ， 换行符分割
+> `Ctrl + u/d`：上/下翻页
+
+演示操作：
+
+w -> b -> W -> B
+
+![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cb33556f27604e97a24248f5c8103e1c~tplv-k3u1fbpfcp-watermark.image)
+
+
+实际开发中移动操作
+
+比如，查看41行的 `initialize()` 方法的实现。
+
+`41G` -> `2w` -> `⌘+⌥+B`
+
+![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/aa5a1f65421d4393a835a447e8601fb8~tplv-k3u1fbpfcp-watermark.image)
+
+### VIM 编辑命令
+
+- 选中命令
+
+  - `v`：可视化模式，通过 移动命令,选中相应的内容。
+
+![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4875caf3fe0f4397ae11c41519386219~tplv-k3u1fbpfcp-watermark.image)
+
+- 插入命令
+
+
+  - `i & I`：i在光标字符前插入，I在行首插入。
+  - `a & A`：a在光标字符后添加，A在行尾添加。
+
+- 删除命令
+  - `d+motion` ：删除指令
+
+    常用操作：
+
+
+    > v：选中后删除d</br>
+    > dd：删除当前行，并把删除的行存到剪贴板里</br>
+    > db/w：删除上/下一个单词</br>
+
+    操作演示：
+
+    v -> d -> dd -> db -> dw -> dd
+
+    ![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6966a8f705194b15b8e32df56385b791~tplv-k3u1fbpfcp-watermark.image)
+
+- 修改命令
+  - c [number] motion：更改类操作符的工作方式跟删除类是一致。
+
+    常用指令：
+    > cw 修改当前整个单词，删除当前单词后，编辑正确内容
+
+    ![](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/20d0bbd444b9455bb872e8a4cc77481b~tplv-k3u1fbpfcp-watermark.image)
+
+  - 除了上一节所说的cw，我也可以键入c$，用来修改当前字符到行末的所有内容
+
+- 撤销命令
+  - `u` 撤销最近的一个修改动作；
+  - `U` 撤销当前行上的所有修改。
+  - `ctrl + R`： 重放命令- 回退撤销操作
+
+- 复制粘贴命令
+  - y [number] motion : 复制命令，常用的有 yy 复制一行，yw 复制下一个单词，y$ 复制到行尾。
+  - [number] p : 粘贴复制内容 ， 可粘贴多次 5p
+  ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0a48c899e8d84bc2b1b2f08ff8133b92~tplv-k3u1fbpfcp-watermark.image)
+
+
+### VIM 命令模式
+
+> 在普通模式下，输入`:`即可进入
+
+- s/executor/asyncExecutor/g ：替换当前行所有 executor 为 asyncExecutor
+- :g/^\s*$/d： 删除空行以及只有空格的行
+- %s/#.*//g： 删除#之后的字符
+
+> 宏录制
+
+- qa 把你的操作记录在寄存器 a。
+- 于是 @a 会replay被录制的宏。
+- @@ 是一个快捷键用来replay最新录制的宏。
+
+示例
+
+在一个只有一行且这一行只有“1”的文本中，键入如下命令：
+
+- qaYp<C-a>q→
+ - qa 开始录制
+ - Yp 复制行.
+ - <C-a> 增加1.
+ - q 停止录制.
+
+- @a → 在1下面写下 2
+
+- @@ → 在2 正面写下3
+
+现在做 100@@ 会创建新的100行，并把数据增加到 103.
+
+![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c3be9447cdcb4c6fa6e1f0a76a02da88~tplv-k3u1fbpfcp-watermark.image)
