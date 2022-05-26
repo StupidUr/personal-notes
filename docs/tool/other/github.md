@@ -14,6 +14,19 @@ order: 4 # 排序
 
 2. Gitee 和 Github 同步更新
    > 如果是本地仓库，只在需要命令行添加用不同名称标识的 Gitee  和 Github 远程库。
+  - 修改配置文件`.git/config`
+
+   ![](https://cdn.jsdelivr.net/gh/StupidUr/images@main/notes/20220526115915.png)
+
+  - 使用git remote添加远程仓库
+  - 使用工具添加远程仓库(sourcetree)
+  ----
+  
+  **添加别名同步提交多个远程仓库**
+
+  ![](https://cdn.jsdelivr.net/gh/StupidUr/images@main/notes/20220526120741.png)
+
+3. 
 
    
 
