@@ -18,7 +18,7 @@ export default defineConfig({
         { title: 'VSCode', path: '/tool/VSCode' },
         { title: 'IDEA', path: '/tool/IDEA' },
         { title: 'MAC', path: '/tool/MAC' },
-        { title: 'other', path: '/tool/other' }
+        { title: 'other', path: '/tool/other' },
       ],
     },
     {
@@ -32,11 +32,11 @@ export default defineConfig({
     },
     {
       title: '待解决问题',
-      path: '/problem'
+      path: '/problem',
     },
     {
       title: 'GitHub',
-      path: 'https://github.com/StupidUr',
+      path: 'https://github.com/stupidur',
     },
   ],
 });

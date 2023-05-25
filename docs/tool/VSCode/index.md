@@ -84,4 +84,4 @@ order: 1 # 排序
 
 1. Code安装似乎损坏，请重新安装
   - 安装 `Fix VSCode Checksums` 插件,设置相关插件功能
-  ![](https://cdn.jsdelivr.net/gh/StupidUr/images@main/notes/20220427102759.png)
+  ![](https://cdn.jsdelivr.net/gh/stupidur/images@main/notes/20220427102759.png)

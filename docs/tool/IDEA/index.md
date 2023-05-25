@@ -2,6 +2,7 @@
 title: 'IDEA使用笔记' # 左侧标题
 sidemenu: true # 左侧菜单
 order: 1 # 排序
+layout: scroll
 ---
 # IDEA使用笔记
 
@@ -11,27 +12,27 @@ order: 1 # 排序
 
 1. Github Copilot
 > 微软与OpenAI共同推出了一款AI编程工具GitHub Copilot。有多强大用了就知道，`Tab`自动补齐。
-![](https://cdn.jsdelivr.net/gh/StupidUr/images@main/notes/20220427092527.png)
+![](https://cdn.jsdelivr.net/gh/stupidur/images@main/notes/20220427092527.png)
 
 2. [IdeaVim](/tool/other/vim)
 > 插件可以让你在IntelliJ IDEA中键盘敲的飞起。快捷键设置如下图，如与IDEA自带的快捷键冲突，可以在设置中自定义
-![](https://cdn.jsdelivr.net/gh/StupidUr/images@main/notes/20220427092257.png)
+![](https://cdn.jsdelivr.net/gh/stupidur/images@main/notes/20220427092257.png)
 
 3. Background Image Plus +
 > 用户自定义设置Idea的背景图，并且能够修改透明度，实现看着美女敲代码
 
 设置相关背景图片目录：
-![](https://cdn.jsdelivr.net/gh/StupidUr/images@main/notes/20220427101249.png)
+![](https://cdn.jsdelivr.net/gh/stupidur/images@main/notes/20220427101249.png)
 Idea自带背景图透明度设置如下：
-![](https://cdn.jsdelivr.net/gh/StupidUr/images@main/notes/20220427100936.png)
+![](https://cdn.jsdelivr.net/gh/stupidur/images@main/notes/20220427100936.png)
 
 4. Gitmoji Plus:Commit Button
 > 插件可以让你在git commit的时候添加一个emoji
-![](https://cdn.jsdelivr.net/gh/StupidUr/images@main/notes/20220427091937.png)
+![](https://cdn.jsdelivr.net/gh/stupidur/images@main/notes/20220427091937.png)
 
 5. Code Search
 > 代码搜索插件
-![](https://cdn.jsdelivr.net/gh/StupidUr/images@main/notes/20220427091750.png)
+![](https://cdn.jsdelivr.net/gh/stupidur/images@main/notes/20220427091750.png)
 
 6. Alibaba Java Coding Guidelines
    > Blocker , Critical ,Major 等级由高到低，高的需要需要优先解决。这个插件**必须安装**,比Lint更进一步规范的插件，强大到没朋友。
@@ -79,7 +80,7 @@ Idea自带背景图透明度设置如下：
 | -------| ------| 
 | ⇧+⌘+⌥+单击 或 ⇧+⌘+8 开关列选择模式| 选中多行同时编辑| 
 | ⇧+⌘+v | 针对复制历史进行粘贴| 
-| ⌘+⌥+⇧+Y | 右键菜单 ![](https://cdn.jsdelivr.net/gh/StupidUr/images@main/notes/20220428160929.png) | 
+| ⌘+⌥+⇧+Y | 右键菜单 ![](https://cdn.jsdelivr.net/gh/stupidur/images@main/notes/20220428160929.png) | 
 | ⌘+. | 折叠当前代码块 |
 | ⌘+F12 | 打开当前类所有方法 |
 | ⌘+上下左右 | 类以及方法直接切换 |
